@@ -1,0 +1,2222 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <con1 Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>con1</Alias>
+        <ConnectionStringEncrypted>+RrVK01KQvBqFb3MYwB3L9Vw3QJFGFrxf0HRmGlJ4UbZ8vcJT0wTmelH9dx6PaI3/XjNzU9US5lpQf1Y5Bgl</ConnectionStringEncrypted>
+        <Name>con1</Name>
+      </con1>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <DataSource1 Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DataSource1</Alias>
+        <Columns isList="true" count="41">
+          <value>name,System.String</value>
+          <value>family,System.String</value>
+          <value>father,System.String</value>
+          <value>iden,System.String</value>
+          <value>meli,System.String</value>
+          <value>born,System.String</value>
+          <value>W_born,System.String</value>
+          <value>ex_ostan,System.String</value>
+          <value>ex_sharstan,System.String</value>
+          <value>w_Doc,System.String</value>
+          <value>trai,System.String</value>
+          <value>ser_ostan,System.String</value>
+          <value>ser_sharstan,System.String</value>
+          <value>situ,System.String</value>
+          <value>marr,System.String</value>
+          <value>child,System.Int32</value>
+          <value>date_Este,System.String</value>
+          <value>year_Es,System.String</value>
+          <value>organ,System.String</value>
+          <value>part,System.String</value>
+          <value>id,System.Int32</value>
+          <value>num_Este,System.String</value>
+          <value>var_per,System.String</value>
+          <value>number_Hokm,System.String</value>
+          <value>date_run,System.String</value>
+          <value>date_sodor,System.String</value>
+          <value>num2str,System.String</value>
+          <value>tozehat,System.String</value>
+          <value>cost_base,System.Double</value>
+          <value>job,System.Double</value>
+          <value>manage,System.Double</value>
+          <value>special,System.Double</value>
+          <value>super,System.Double</value>
+          <value>expert,System.Double</value>
+          <value>technic,System.Double</value>
+          <value>childern,System.Double</value>
+          <value>house,System.Double</value>
+          <value>diff,System.Double</value>
+          <value>turn,System.Double</value>
+          <value>add_all,System.Double</value>
+          <value>show,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>DataSource1</Name>
+        <NameInSource>con1</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>SELECT A.name,A.family, 
+	A.num_Este,A.father,A.iden,A.meli,
+	A.born,A.W_born,A.ex_ostan,A.ex_sharstan,
+	A.w_Doc,A.trai,A.ser_ostan,A.ser_sharstan,
+	A.situ,A.marr,A.child,A.date_Este,A.year_Es,A.organ,A.part,
+	
+	
+	
+B.* FROM tb_personel A, tb_hokm_personel B WHERE 
+A.num_Este = B.num_Este and A.show=0 and B.show=0</SqlCommand>
+      </DataSource1>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="3">
+      <value>,var2,var2,System.String,,False,False</value>
+      <value>,var3,var3,System.String,,False,False</value>
+      <value>,var4,var4,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>All;Black;2;Double;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="9">
+        <Image1 Ref="5" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.6,-3.8,2.6,1.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Image>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABGAGoDAREAAhEBAxEB/8QAHgAAAgICAwEBAAAAAAAAAAAAAAcGCAUJAQQKAwL/xABDEAABAwMCBAMEAwwKAwAAAAABAgMEBQYRAAcIEiExCRNBFFFhgSIycRUjMzU4QlJic5GxtBYYN3J0dXaCkqGDorP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANqegNAaA0BoDQGgNBULcvxFbX2Z4nF7X3rSzSaIWmyi5Q/zoacWnI81vl+ijsOYE47kY0Fr6JXadctKjVOkzo9Tp0lAcZlxHQ424k9ilQJB0He0BoDQGgNAaA0BoDQGgrhxe8a9B4QGaA7XLcqVeRV1KSj7nuto8vlBPXnPXtoExRPF0tOs05qoI2l3Dcp7meSXEgNvtKwcHCgsA4II76DW3xsbx0biJ4jZFy0mnVWkQJiWGDGqzAZkIwAk5SCoD9+gurZHA1xB7D29S7m4fd1RIp8+K1OetuskNIW4pIJTyqCmV+7mPIfj66Cc0/jx4iNo0IY3g4c6rMYaHK7WLaCyg4/OwkONn/mnQTKh+LrsdLKWa6zdFqTOy49SpJUUfaW1K/hoGTYviIbC7j3TS7coN6ql1ipPJjxYyqbKRzuKOAMqbAHU+p0FkdAaA0BoDQVj46eMyPwh2FElxKSK1c1WWWadHfUUx0EAkuOkdSAAeg7nHUaCqGw7PFvx2UBV5SN2kbZ2U86tmP8AcVjynHylRSvy0tkLwCCnK3M5HYjroEN4kHDVXtg4Vov17dW5NyZNRW4M1xaihggHqgKcXjOg2FeFYSeC2zuvZ+b/ADLmg1y+KFgcakvGAOWJ2+xOg3TbR/2XWn/lkf8A+Y0Eu0GGrVmW/ciSmr0Km1RJ9JsNt4f+wOg8/wDwzMtx+Oi2mmkJaaRdikoQgYSkCQQAB6DQehnQGg40C6qG+9rW7VqpBuSdFtoxHAhgzp8ZTk0eqmmW3FOYB6fSSD8NBLLTu+m3tSU1OlGSuEtRShyTDdjFeDgkJdSlRHxxg+mg1neN1+Lduv2rv8FaCxnhRfkVWj/i5/8ANOaCuXjdfi/br9q7/BWgd3hfblWjReEO0qXULqokCptvyyuFJqLLbycyHCMoUoEZBB7aDJ8anAlaXGJEbr9t12FSb8iM8jM5twOx5aB1CHgkk+vRY6jp3HTQVr224leIzgDZRaO79gVK87Dhnki1mKS4Y7Q9G5KQUKT6hDvKoe8DGguJtT4j2we7CI7ce941u1F0DMC4kmEtJ93mK+9k/Ys6CxdHuGlXDGTIpVTh1OOoZS7DfQ6kj3gpJGg8/PDZ+Xbbv+rlfzB0HoW0C/3L3Idtaq0G3KaqK1cNwOqYgv1FK/ZkKSkqJIT1WrAOEZTnvkY0HQk7NIrMNx29bkrd4OcpUuGiQqBCJ/RTHjlIUn0AcU4feT30Clo9/WrsfWrkqD1sm3I5DaWaXTaXzusJylsOJZaQHXeZRSpS8BIBI5ycZBg0nfRqhTKZFuKrUmoQpyy0msMq9jUl9YLqI6oyyrkw0CSpTgJ5T9EZ0FG/GxeamW9trKjutvsOvOKbdbUFJWkoUQQR0II9dBGOCrxGLP2B4drb2+RaNz3fdkeRKcXEpMdBbw4+tacKKipRwodk6Cb7yb9u8TTNNXePBhflyw4BKoin5MuKpGc5OG2k57+ugTdYpOxsBtX9IeDPdC3Wx9Z+LLmqSn4grwP+9BG2v6msiQkQ63vFtRPJ/CLSh1ts/EJC1n5aBpWfS6ohCUbM8ckKoNrThFEvl5bAX+oUyOdJyOn1PhoOpeWxO9cloTL04btu92IDnVVYssphS3uv1guI4jJPfq0dAppFt7U2fPSq4drd+Nn5IVhf3HmpfZSc90l9ltR/5aBT8HamV8X9gqjrfdjmvtFtcr8KpPm9Cv8AWx3+OdB6LtB0KjX6XR3mGZ9SiQnXzhpuS+ltTn90EjPy0HLlbpzTXmrnxUNfpqeSE/vzoFk7ufRZ9Tq9NqE2iXMp1fJCpVtJdmyloxgiRyZSn/dhI9ToEvuruPRKrbtesOLaVBrEihRkyJdqQ6N7S7EfUtKmleY8yqGj6BypSubBz6ddAuvEa4a7z384d7BrVo0pU6p0CIxIk0SN5S3lNqZAUGvKAbWUk9mxykA8oxgaBFeGxxZ7ScNNArVn7j0p6ybtXMKna3JguOKeT6Nu4SVtFPbl5eU4yeugv1P8QHh4ptOM13deguNAc3JHW486f/GhJVn5aDXbxT8ZV58SW/FHi8NM69mvZ4nsbqqO6+wmc4Vk+YWQcJSAQOdYBwOuBoNmWyG1dXc2TtulbwNQLzusRuaoP1SM1JPOok8iiU4UUggE+8dz30ERv/w6+HvcTzFzduafS5KzkyKItyCoH38rSgk/NJ0CZk+E7TrTkKlbW7yXtt/IB5kIQ/57Q65xhCmifmT89B9Y/DFxlWYSm3uJKnVplP1RXqd5iz9vO27/AB0CQ2Q8LjePbriCtm+65WLYnxIdWRUJqospwOL++cyylBaAz36dBoNsOgw1z2ZQL2g+xXDRKdXYYOQxUYqH0A+8BYIB0EPjcNe1ERzna25thJ9xpTJH7inGgmiKdR7YobrLEOJTKUy0eZmO0lptKAOuEpAA6e7QVK4ka3FkWlT7LolOtay6RdL48k3I4spq6cFRHskZtTrgIBwS42T0GeuNAxNkeJizbgg2/ZNv0+c/VacyKdJg06lvssQEsfesqDv4NJ5MpQpSlBJGSTnQdfdlq2Liuetw9wdubOlw22eWkz64GJcqUvHbyGwt8pznHKM40C1o2yO0FanQ49s8OtsvVhZS27KrqGqfES7ycy+RhznfUMZUE+UDjvjQWxsCw6PYVEah0ugUSgLUkF5mhQkxmCr4AAE/adBJ9AaA0BoDQGgNAaDC3jbgu225tJMhUUSQlJdSMkAKCv8AvGPnoIvdu0jVYpLyaJORb9ecjoiproYL8iO2EhJ8jKx5SsdlJ7HqQdBAa3tLuxAlqhUndaKxaao8eO4/WoTsipJCG0oWfOS82kqcUCorwlQKsDQfK3rBtXbiG3b87cCtT5ZUuU57HJLEh8KcPR2QjLqgCcBKnc4A799EYmrbU0e5K5GXQ63R7ZfaadESRTS8ahGSoqS4+p7mClPKypOVnH0vzvUpv27uHatHozVNcuYSXqbHDbr9Sdw+8EJwVqJxzE4OSPXQTCnVaJVmG3Yr6HkLQlwcp68pGQSPTodB3NAaA0BoDQGgNAaA0HCkhYIUAoH0OgwyrLoJjS46aRDZalqK3/IZDZcV+kSnBz8c50GJh7SWpCUSimKWD3Q/KedQr4FKlkH5jQZ963aVJbabdpsR1toANoWykpQAcjAIwNB30NIb+qhKfToMaD9aA0BoDQGg/9k=</Image>
+          <Name>Image1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </Image1>
+        <Text1 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.8,-2,8.4,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>A  Mitra_1 (MRT),14</Font>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>( حکم کارگزینی اعضای هیأت علمی ( پرسنلی </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Text2 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.6,-1.2,5.2,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>A  Mitra_1 (MRT),14</Font>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>دانشگاه علوم و فنون مازندران</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text2>
+        <DataBand1 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,19,23.4</ClientRectangle>
+          <Components isList="true" count="140">
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,0,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>وزارت علوم ، تحقیقات و فناوری</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,0.6,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>دانشگاه علوم و فنون مازندران</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>16.3,1.4,2.8,0.7</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: مستخدم شماره -1</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="CustomFormat" isKey="true">
+                <StringFormat>نام -1 </StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.6,1.4,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: تاریخ استخدام -2</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,1.4,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a8e4b0591b7f42dab59605a9558273d9</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: خدمت سنوات -3</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text9 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>17.9,2.4,1.2,0.7</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>63c8998e2ab94da29dede107571485cd</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>:نام -4</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="16" type="CustomFormat" isKey="true">
+                <StringFormat>نام -1 </StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,2.4,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>3354b6df26ba42e1a1c0a3103b310eb5</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: خانوادگی نام -5</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,2.4,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>57e6c57d0a034d0aae62a8e8e06ad328</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: پدر نام -6</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,1.4,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.num_Este}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.19,3.4,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>83b20ff37b0940b3bb0cf9b350160aca</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: شناسنامه شماره -7</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.1,3.4,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>17544460a5484962bc3a646381fe625d</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: تولد تاریخ -8</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text14>
+            <Text15 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.96,3.4,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>5c2eb1d141ad42789d78aeaee1d5c613</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: ملی کد -9</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text15>
+            <Text18 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.7,4.3,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>e2e45f6937b34ed18bf281a6cbb1c1d0</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: صدور محل -10</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text23 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.35,5.2,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>b7ec1652517c426eb1befc7d5f5e41b4</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: تحصیلی مدرک آخرین -12</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text23>
+            <Text25 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17,5.8,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>fef33ea7a4504f8f9fb5ebdb2f81f12d</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: اخذ محل</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text25>
+            <Text26 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,5.8,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>285b85fc338849079b3348dbc3c8a699</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: استان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text26>
+            <Text27 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.33,5.2,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>eee8904208cf48d49876432bf58f976b</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: خدمت محل -13</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text27>
+            <Text28 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.45,6.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>8116a4d340154a0cbec951162bf5f2f6</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: سازمانی پست عنوان -14</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text28>
+            <Text65 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,1.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.date_Este}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text65>
+            <Text68 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,2.4,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text68>
+            <Text69 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,2.4,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.family}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text69>
+            <Text70 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.4,6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.father}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text70>
+            <Text71 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,3.4,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.iden}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text71>
+            <Text72 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,3.4,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.born}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text72>
+            <Text75 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,4.3,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text75</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.ex_sharstan}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text75>
+            <Text66 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.year_Es}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text66>
+            <Text8 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.36,4.3,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>968a32bcafb445eaaf5ec5a301b4f7ba</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>:شهرستان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text16 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.76,4.3,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>187dc437fb99400d9f948c14c622fd7f</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>:استان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,4.3,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>1101e42d6f22459b931066ea5d94d5ea</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.ex_ostan}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text17>
+            <Text19 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.56,4.4,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>6377c54ecccd4cbaa02adab85fc15c83</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: تولد محل -11</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text19>
+            <Text20 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,5.8,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>71365663b1a64d6ca3f59e25bf07d3ca</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: شهرستان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.1,6.4,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>fe684fce11844a2eac11428185cc688e</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: سازمانی حوزه -15</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text21>
+            <Text100 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.4,6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>904b134d488847398d3f17d88f2012b7</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text100</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.meli}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text100>
+            <Text101 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.4,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a9d4e3ef60164ebd90ef086a794a02e6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text101</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.W_born}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text101>
+            <Text102 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,5.1,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a0f73c91d005467d861c58b015b97cbf</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text102</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.trai}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text102>
+            <Text103 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,5.9,9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>3e7b249b3e72499ea4d5921552800b1a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text103</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.w_Doc}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text103>
+            <Text105 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,5.8,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a1c467fcfbbc4ab6832b6ef538a9db81</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text105</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.ser_ostan}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text105>
+            <Text29 Ref="48" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,7.4,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>8cbccaf2617042b981ad4aa4ca1fec04</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>مجرد</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text29>
+            <Text30 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,7.4,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>5c89baa5724a4f03b3ae5696ef942874</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>متأهل</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text30>
+            <CheckBox1 Ref="50" type="CheckBox" isKey="true">
+              <Brush>Transparent</Brush>
+              <Checked>{IIF(DataSource1.marr =="متاهل",true,false)}</Checked>
+              <CheckStyleForTrue>DotRectangle</CheckStyleForTrue>
+              <ClientRectangle>12,7.4,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>CheckBox1</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <TextBrush>Black</TextBrush>
+            </CheckBox1>
+            <Text31 Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.2,7.4,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>d908d348b3e54fa4a3eb8aa21ea53e03</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: فرزندان تعداد</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text31>
+            <Text33 Ref="52" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.9,8.2,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>630b721bc0644c66b3ec25ac4c3be754</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: حکم نوع -18</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text33>
+            <Text34 Ref="53" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.93,8.2,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>3ab0123a81234274b7236854f065c514</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: ها العاده فوق و حقوق -20</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text34>
+            <Text35 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.73,8.8,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>bd645dbb66164b1b98a4a92ddf513650</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: حکم شرح -17</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text35>
+            <Text36 Ref="55" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,8.8,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>403a276f8a464e6aa42540b353c1911e</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text36>
+            <Text37 Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,9.6,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>3de4cfca2e344064883062818cc6e9e5</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text37>
+            <Text38 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,10.4,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>ce7d200611754479ae1aa719feef5d67</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text38>
+            <Text39 Ref="58" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,11.2,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>b531636838e5450ea7bfe5ca8be1065b</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text39>
+            <Text40 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,12,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>413f7d2998594065a7aefdce24ce2122</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text40>
+            <Text41 Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,12.8,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>9615593d613646c1be7b836b5a052543</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text41>
+            <Text42 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,13.6,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>650ce6957e2b4ea79a45921b4cbe7a2c</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text42>
+            <Text43 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,14.4,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>8b5415852d8c44ea8604c74adaca6bff</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text43>
+            <Text45 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.32,8.8,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>36081e9fcee947958da08a0fa1b896e6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>الف) مبنا حقوق</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text45>
+            <Text46 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.52,9.6,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>06d641078e634c82a5c8620abe0b1993</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ب) فوق العاده شغل</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text46>
+            <Text47 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.52,10.4,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>0c5665e99ab84c8d9f5fd652bf3d53d5</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ج) فوق العاده مدیریت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text47>
+            <Text48 Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.52,11.2,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>c31fe66503e64344bddda2252a7e009b</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>د) فوق العاده ویژه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text48>
+            <Text49 Ref="67" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,12,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>7621823ac37e4f37bc44412a907a47fa</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>هـ) سرپرستی حق</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text49>
+            <Text50 Ref="68" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,12.8,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>055c47c574e947439b4d2db6ecea6c33</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>و) فوق العاده کارشناسی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text50>
+            <Text51 Ref="69" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,13.6,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>3a55589f6a774e418b14fe373adcde54</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ز) فنی حق</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text51>
+            <Text52 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,14.4,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>fc04c2a28e694b539a6d63fbaa533561</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ح) اولاد حق</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text52>
+            <Text82 Ref="71" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,7.4,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.child}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text82>
+            <Text84 Ref="72" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,8.2,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>پرسنلی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text84>
+            <Text85 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,9.8,6.8,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.tozehat}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text85>
+            <Text86 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,8.8,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.cost_base}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text86>
+            <Text87 Ref="75" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,9.6,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text87</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.job}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text87>
+            <Text88 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,10.4,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text88</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.manage}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text88>
+            <Text89 Ref="77" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,11.2,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text89</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.special}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text89>
+            <Text90 Ref="78" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,12,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text90</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.super}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text90>
+            <Text91 Ref="79" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,12.8,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text91</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.expert}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text91>
+            <Text92 Ref="80" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,13.6,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text92</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.technic}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text92>
+            <Text93 Ref="81" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,14.4,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text93</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.childern}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text93>
+            <Text83 Ref="82" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,7.4,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.situ}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text83>
+            <CheckBox2 Ref="83" type="CheckBox" isKey="true">
+              <Brush>Transparent</Brush>
+              <Checked>{IIF(DataSource1.marr =="مجرد",true,false)}</Checked>
+              <CheckStyleForTrue>DotRectangle</CheckStyleForTrue>
+              <ClientRectangle>13.4,7.4,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>CheckBox2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <TextBrush>Black</TextBrush>
+            </CheckBox2>
+            <Text22 Ref="84" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.7,7.4,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>430d3373c09d47e5a86e9f8e0aa3c011</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: مندی عائله و تأهل وضعیت -16</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text22>
+            <Text24 Ref="85" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,7.4,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>4bd10cc8908f4a54950491b8035b872f</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: استخدامی وضعیت -17</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text24>
+            <Text67 Ref="86" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,15.2,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>feff15214abb4e30ac68351631db0bba</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ط) کمک هزینه مسکن</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text67>
+            <Text73 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,15.2,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>474240ee5dfd49fb8de744cfc08869e2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.house}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text73>
+            <Text74 Ref="88" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,15.2,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a1e4e979dd534b95922bb2faa5a2d085</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text74>
+            <Text106 Ref="89" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,6.5,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>55db104eecd64f629b1b7768abcb6a67</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text106</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.organ}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text106>
+            <Text44 Ref="90" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,17.6,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>72b6201857ce463e91c38af417f6873a</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text44>
+            <Text53 Ref="91" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,17.6,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>07b9053fbcf946dd9c24a5465be52989</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: جمع</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text53>
+            <Text54 Ref="92" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.73,18.6,9.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>fbe8fb38d9fb472fb7c7bf1be97d9926</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>(حروف به ) مبلغ به جمعاً حکم این در مندرج های العاده فوق و حقوق -19</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text54>
+            <Text55 Ref="93" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.9,19.8,3.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>1d1ab194518a4aae8c226cf4af438c72</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: حکم اجرای تاریخ -20</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text55>
+            <Text56 Ref="94" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.5,20.6,7.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>1460b1ea1ded445789077bdd88476b2d</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: .گرفت قرار توافق مورد و قرائت قرارداد مفاد و شرایط -22</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text56>
+            <Text57 Ref="95" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,19.8,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a219a2f2d0454bf891aecc0fe37834e2</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: حکم صدور تاریخ و شماره -21</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text57>
+            <Text58 Ref="96" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.32,20.6,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>5df42820a77149fea9e09c9333beaf17</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: شماره</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text58>
+            <Text59 Ref="97" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.52,20.6,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>4f706707972141648d9aacf2880790bf</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text59>
+            <Text60 Ref="98" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.11,21.6,5,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>20460e9057354517b3d288e04759cc75</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: مسئول مقام خانوادگی نام و نام -23</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text60>
+            <Text61 Ref="99" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.1,21.6,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>ef952dc1b68942b99f4eaefc5e0b8cd6</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>مجیدی محسن مهندس</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text61>
+            <Text62 Ref="100" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,22.4,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>127fe801e71c49daa31a998318a4f429</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: پست سازمانی عنوان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text62>
+            <Text63 Ref="101" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.5,22.4,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>d2254baa0df04ac6af3cbaf7a171480b</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>دانشگاه مالی و اداری معاون</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text63>
+            <Text64 Ref="102" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.1,22,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>aaf73e26e0444829ae56b540e43df229</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>: مستخدم امضاء</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text64>
+            <Text94 Ref="103" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,17.6,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text94</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.add_all}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text94>
+            <Text95 Ref="104" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,18.6,9.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text95</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.num2str}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text95>
+            <Text96 Ref="105" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.2,19.8,6.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text96</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.date_run}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text96>
+            <Text97 Ref="106" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,20.6,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text97</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.number_Hokm}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text97>
+            <Text98 Ref="107" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,20.6,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text98</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.date_sodor}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text98>
+            <Text76 Ref="108" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.32,16.8,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>9aa3ba5d110b42aeac67b92190822ee2</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text76</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ی) کاری نوبت العاده فوق</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text76>
+            <Text77 Ref="109" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,16,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>713addf6d5bd49f48ce8fe31df6fcc2e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text77</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.diff}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text77>
+            <Text78 Ref="110" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.12,16,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>a106fc5dbf4c43e9a27a0d86bde5c40a</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text78</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text78>
+            <Text79 Ref="111" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,17.6,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>76b0f3a01a754b86b0d9baf43669f3ee</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text79>
+            <Text80 Ref="112" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.72,16,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>d6df39d674d44c9887b245a2a467320a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>م) تطبیق تفاوت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text80>
+            <Text81 Ref="113" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,16.8,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>78a49a2c0b5049f0a513a4f3783ba302</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.turn}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text81>
+            <Text99 Ref="114" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,16.8,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>79deabc82b1d40f6a2b5967b080b748e</Guid>
+              <HorAlignment>Width</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text99</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text99>
+            <Text107 Ref="115" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,6.4,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>4252d826e3eb4d4c884a4baec1f256d7</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text107</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.part}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text107>
+            <Text104 Ref="116" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,5.8,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>A  Mitra_1 (MRT),10</Font>
+              <Guid>f5f3c5a88c534337aa2babb43bf7381a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text104</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{DataSource1.ser_sharstan}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text104>
+            <HorizontalLinePrimitive1 Ref="117" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="118" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="119" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Double</Style>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="120" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,2.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="121" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="122" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+            <StartPointPrimitive1 Ref="123" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>14.2,1.25,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>c5ae91d0ef854553a1271a6b2a81a298</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="124" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>14.2,4.2,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>c5ae91d0ef854553a1271a6b2a81a298</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <StartPointPrimitive2 Ref="125" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>7.8,1.25,0,0</ClientRectangle>
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>0b5dc17fe35b4903b33072b5e7df55e2</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <HorizontalLinePrimitive3 Ref="126" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,3.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="127" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="128" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+            <HorizontalLinePrimitive4 Ref="129" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,4.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="130" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="131" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive4>
+            <HorizontalLinePrimitive5 Ref="132" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,5.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="133" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="134" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive5>
+            <HorizontalLinePrimitive6 Ref="135" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,6.4,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="136" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="137" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive6>
+            <EndPointPrimitive2 Ref="138" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>7.8,8.2,0,0</ClientRectangle>
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>0b5dc17fe35b4903b33072b5e7df55e2</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <HorizontalLinePrimitive7 Ref="139" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,7.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="140" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive7</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="141" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive7>
+            <HorizontalLinePrimitive8 Ref="142" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,8.8,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="143" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive8</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="144" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive8>
+            <StartPointPrimitive5 Ref="145" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>11.6,8.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>ada078f17e554ccbb1a7494b7fe37243</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <HorizontalLinePrimitive13 Ref="146" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,9.6,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="147" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive13</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="148" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive13>
+            <HorizontalLinePrimitive15 Ref="149" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,10.4,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="150" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive15</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="151" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive15>
+            <HorizontalLinePrimitive16 Ref="152" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,11.2,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="153" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive16</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="154" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive16>
+            <HorizontalLinePrimitive17 Ref="155" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,12,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="156" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive17</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="157" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive17>
+            <HorizontalLinePrimitive18 Ref="158" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,12.8,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="159" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive18</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="160" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive18>
+            <HorizontalLinePrimitive20 Ref="161" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,13.6,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="162" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive20</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="163" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive20>
+            <HorizontalLinePrimitive21 Ref="164" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,14.4,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="165" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive21</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="166" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive21>
+            <StartPointPrimitive6 Ref="167" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>5.6,8.8,0,0</ClientRectangle>
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>d80fb4e4c577428da726354305a4b96c</ReferenceToGuid>
+            </StartPointPrimitive6>
+            <HorizontalLinePrimitive19 Ref="168" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,8.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="169" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>f324fc2acdb943d5aeff581fe4ced00c</Guid>
+              <Name>HorizontalLinePrimitive19</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="170" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive19>
+            <HorizontalLinePrimitive22 Ref="171" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,15.2,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="172" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>4ca0b40826d74037a8aff33ca37add05</Guid>
+              <Name>HorizontalLinePrimitive22</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="173" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive22>
+            <HorizontalLinePrimitive9 Ref="174" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,18.4,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="175" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive9</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="176" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive9>
+            <HorizontalLinePrimitive10 Ref="177" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,19.6,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="178" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive10</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="179" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive10>
+            <HorizontalLinePrimitive11 Ref="180" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,21.4,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="181" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive11</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="182" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive11>
+            <StartPointPrimitive4 Ref="183" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>9.6,19.6,0,0</ClientRectangle>
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>45d3fdfad27648daaa832bc349da268e</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <EndPointPrimitive4 Ref="184" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>9.6,21.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>45d3fdfad27648daaa832bc349da268e</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <HorizontalLinePrimitive12 Ref="185" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>9.6,20.5,9.4,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="186" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive12</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="187" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive12>
+            <EndPointPrimitive5 Ref="188" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>11.6,18.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>ada078f17e554ccbb1a7494b7fe37243</ReferenceToGuid>
+            </EndPointPrimitive5>
+            <HorizontalLinePrimitive14 Ref="189" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,17.6,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="190" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive14</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="191" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive14>
+            <EndPointPrimitive6 Ref="192" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>5.6,18.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>d80fb4e4c577428da726354305a4b96c</ReferenceToGuid>
+            </EndPointPrimitive6>
+            <HorizontalLinePrimitive23 Ref="193" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,16,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="194" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>8a96c035f1b6453dbd453b9d8b211f9e</Guid>
+              <Name>HorizontalLinePrimitive23</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="195" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive23>
+            <HorizontalLinePrimitive24 Ref="196" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,16.8,11.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="197" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>299d38bc2e5f4290aa2cabbcd2c71831</Guid>
+              <Name>HorizontalLinePrimitive24</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <StartCap Ref="198" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive24>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DataSource1</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <VerticalLinePrimitive1 Ref="199" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>14.2,1.65,0.0254,2.95</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="200" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>c5ae91d0ef854553a1271a6b2a81a298</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="201" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <VerticalLinePrimitive2 Ref="202" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>7.8,1.65,0.0254,6.95</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="203" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>0b5dc17fe35b4903b33072b5e7df55e2</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="204" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+        <VerticalLinePrimitive4 Ref="205" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>9.6,20,0.0254,1.8</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="206" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>45d3fdfad27648daaa832bc349da268e</Guid>
+          <Name>VerticalLinePrimitive4</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="207" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive4>
+        <VerticalLinePrimitive5 Ref="208" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>11.6,8.8,0.0254,10</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="209" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>ada078f17e554ccbb1a7494b7fe37243</Guid>
+          <Name>VerticalLinePrimitive5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="210" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive5>
+        <VerticalLinePrimitive6 Ref="211" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>5.6,9.2,0.0254,9.6</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="212" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>d80fb4e4c577428da726354305a4b96c</Guid>
+          <Name>VerticalLinePrimitive6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="213" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive6>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2451de006cc84956b052509bec754ccd</Guid>
+      <Margins>1,1,4,2</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="214" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <ImageAlignment>BottomRight</ImageAlignment>
+        <TextBrush>EmptyBrush</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="215" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/8/2015 7:02:57 PM</ReportChanged>
+  <ReportCreated>7/5/2015 12:05:00 AM</ReportCreated>
+  <ReportFile>D:\personnelMangement\personnelMangement\bin\Debug\Personel.mrt</ReportFile>
+  <ReportGuid>da8cb160d5144cca88a6a68ece3f1006</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.2.2004</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

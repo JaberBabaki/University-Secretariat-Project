@@ -1,0 +1,86 @@
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\personnelMangement.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form1.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe.licenses
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\Janus.Data.v3.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Enhance.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form2.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.UI.v3.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form3.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form4.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form5.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form6.resources
+C:\Users\User\Documents\Visual Studio 2013\Projects\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form7.resources
+E:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe.config
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.pdb
+E:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe
+E:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.pdb
+E:\personnelMangement\personnelMangement\bin\Debug\Janus.Data.v3.dll
+E:\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+E:\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.UI.v3.dll
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csprojResolveAssemblyReference.cache
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Enhance.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form1.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form2.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form3.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form4.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Form5.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form6.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form7.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Properties.Resources.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csproj.GenerateResource.Cache
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe.licenses
+E:\personnelMangement\personnelMangement\bin\Debug\JntNum2Text.dll
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form8.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Login.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form9.resources
+E:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Form10.resources
+D:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe.config
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.pdb
+D:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe
+D:\personnelMangement\personnelMangement\bin\Debug\personnelMangement.pdb
+D:\personnelMangement\personnelMangement\bin\Debug\Janus.Data.v3.dll
+D:\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+D:\personnelMangement\personnelMangement\bin\Debug\Janus.Windows.UI.v3.dll
+D:\personnelMangement\personnelMangement\bin\Debug\JntNum2Text.dll
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csprojResolveAssemblyReference.cache
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Main.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.SendMessage.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Login.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Properties.Resources.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csproj.GenerateResource.Cache
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe.licenses
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.ListOfMessage.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.RegisterPersonel.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.ListOfPersenel.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.RegisterHokm.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.ListOfHokm.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Zarayeb.resources
+D:\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.EditRespons.resources
+D:\personnelMangement\personnelMangement\bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\bin\Debug\personnelMangement.exe.config
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.pdb
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csprojResolveAssemblyReference.cache
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.EditRespons.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Main.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.ListOfMessage.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.RegisterPersonel.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.ListOfPersenel.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.RegisterHokm.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.ListOfHokm.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Zarayeb.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.SendMessage.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.forms.Login.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.Properties.Resources.resources
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.csproj.GenerateResource.Cache
+E:\daneshgah\karshnasi\C sharp project\personnelMangement_5new\personnelMangement\personnelMangement\obj\Debug\personnelMangement.exe.licenses
